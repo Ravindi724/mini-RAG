@@ -29,25 +29,49 @@ A lightweight **Retrieval-Augmented Generation (RAG)** system built using:
 | `rag_pipeline.py`| Orchestrates all steps |
 | `main.py`        | CLI entry point |
 
+
 ## Installation
 
-1. **Create a virtual environment**  
+### 1. Create a virtual environment
+
 ```bash
 python -m venv venv
-Activate the virtual environment
+```
 
-Windows:
+### 2. Activate virtual environment
 
-bash
-Copy code
+```bash
+# Windows
 venv\Scripts\activate
-Mac/Linux:
 
-bash
-Copy code
+# Mac/Linux
 source venv/bin/activate
-Install dependencies
+```
 
-bash
-Copy code
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Create .env file
+
+Copy `.env.example` and rename to `.env`, then add your OpenAI API key:
+
+```env
+OPENAI_API_KEY=your_key_here
+```
+
+## Running the Pipeline (CLI)
+
+```bash
+python main.py
+```
+
+You will be prompted:
+
+```
+Enter your question:
+```
+
+Type any question about your uploaded text dataset and the RAG system will answer using retrieval + generation.
