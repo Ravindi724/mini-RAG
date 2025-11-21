@@ -60,6 +60,11 @@ Copy `.env.example` and rename to `.env`, then add your OpenAI API key:
 
 ```env
 OPENAI_API_KEY=your_key_here
+EMBED_MODEL=text-embedding-3-small
+LLM_MODEL=gpt-4o-mini
+CHUNK_SIZE=300
+TOP_K=3
+SUBSET_SIZE=350
 ```
 
 ## Running the Pipeline (CLI)
