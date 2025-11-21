@@ -34,26 +34,20 @@ A lightweight **Retrieval-Augmented Generation (RAG)** system built using:
 1. **Create a virtual environment**  
 ```bash
 python -m venv venv
-
-2. **Activate the virtual environment**
 Activate the virtual environment
 
-# Windows
+Windows:
+
+bash
+Copy code
 venv\Scripts\activate
-# Mac/Linux
+Mac/Linux:
+
+bash
+Copy code
 source venv/bin/activate
-
 Install dependencies
+
+bash
+Copy code
 pip install -r requirements.txt
-
-Create .env file
-Copy .env.example and rename it:
-OPENAI_API_KEY=your_key_here
-
-Running the Pipeline (CLI)
-python main.py
-
-You will be asked:
-Enter your question:
-
-(Type anything about your uploaded text dataset and the RAG system will answer using retrieval + generation.)
